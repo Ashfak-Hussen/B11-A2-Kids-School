@@ -1,0 +1,68 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* css for body*/
+.body {
+    margin: 0px 140px;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+}
+
+/* Nav */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navTitleParent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoNav {
+    height: 43px;
+    width: 37px;
+}
+
+.navTitle {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.navOptionParent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.navOptions {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cntctBtn {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(254, 163, 1);
+    padding: 8px 34px;
+    border-radius: 12px;
+    border:none;
+}
+/* navOption ID's */
+#navOption1{
+    color:rgb(254, 163, 1);
+}
+#navOption2{
+    color:rgb(1, 172, 253);
+}
+#navOption3{
+    color:rgb(5, 212, 223);
+}
+#navOption4{
+    color:rgb(93, 88, 239);
+}
