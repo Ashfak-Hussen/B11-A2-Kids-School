@@ -1,0 +1,182 @@
+.BannerParentDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bannerDetailsParent {
+    margin-bottom: 120px;
+}
+
+.bannerTitle {
+    font-size: 50px;
+    margin-bottom: 12px;
+}
+
+.empoweringSpan {
+    color: rgb(254, 163, 1)
+}
+
+.visionSpan {
+    color: rgb(1, 172, 253);
+}
+
+.bannerDetails {
+    color: rgb(17, 17, 17);
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+
+.exploreBtn {
+    font-weight: 300;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(17, 17, 17);
+    padding: 7px 15px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* curriculam section */
+.curriculamSection {
+    text-align: center;
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.componentsParent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.curriculamTitle {
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.components {
+    padding: 60px 30px;
+    background-color: beige;
+    border-radius: 10px;
+    height: 300px;
+    width: 280px;
+}
+
+/* components ids for bg design*/
+#components1 {
+    background: linear-gradient(180.00deg,
+            rgb(222, 245, 255),
+            rgba(255, 255, 255, 0) 40%),
+        rgb(255, 255, 255);
+    border: 1px solid rgb(222, 245, 255);
+    border-radius: 18px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+
+#components2 {
+    border: 1px solid rgb(255, 244, 220);
+    border-radius: 18px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg,
+            rgb(255, 244, 220),
+            rgba(255, 255, 255, 0) 40%),
+        rgb(255, 255, 255);
+}
+
+#components3 {
+    border: 1px solid rgb(242, 232, 255);
+    border-radius: 18px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg,
+            rgb(238, 225, 255),
+            rgba(255, 255, 255, 0) 40%),
+        rgb(255, 255, 255);
+}
+
+/* ids use done here */
+
+.components img {
+    transform: scale(0.7);
+}
+
+.componentsTitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 0px;
+}
+
+.componentsP {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(128, 128, 128);
+}
+
+.componentsBtn {
+    font-weight: 600;
+    font-size: 12px;
+    border: none;
+    margin-top: 13px;
+
+}
+
+/* arrow btn */
+.arrowBtnDiv {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.arrowIcon i{
+    background-color: rgb(254, 163, 1);
+    color: rgb(255, 255, 255);
+    width: 30px; 
+    height: 30px; 
+    padding: 10px; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+/* responsive for mobile */
+@media screen and (max-width:576px) {
+    .BannerParentDiv {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 25px;
+    }
+
+    .curriculamTitle {
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    .componentsParent {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* for tablet */
+@media screen and (min-width:577px) and (max-width:1176px) {
+
+    .BannerParentDiv {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 25px;
+    }
+
+    .componentsParent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

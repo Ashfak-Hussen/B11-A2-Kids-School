@@ -3,13 +3,13 @@
 
 /* css for body*/
 .body {
-    margin: 0px 140px;
+    margin: 0px 160px;
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
 }
 
 /* Nav */
-.nav {
+.navDesktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,4 +65,58 @@
 }
 #navOption4{
     color:rgb(93, 88, 239);
+}
+
+/* hide mobile mode in desktop*/
+.navMobileMode{
+    display: none;
+}
+/* end mobile mode section */
+
+
+
+/* Responsive for mobile starts*/
+@media screen and (max-width:576px) {
+    .navMobileMode{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navDesktop{
+        display: none;
+    }
+    .body {
+        margin: 0px 40px;
+    }
+    .navMenu i{
+      font-size: 27px;;
+    }
+    .logoNav{
+        width: 50px;
+        height: 45px;
+    }
+
+}
+
+/* for tablet */
+@media screen and (min-width:577px) and (max-width:1176px) {
+    .navDesktop {
+        display: flex;
+        flex-direction: column;
+    }
+    .navTitleParent{
+        margin-top: 40px;
+        height: 50px;
+
+    }
+    .navOptionParent{
+        margin-bottom: 15px;
+    }
+    .navMobileMode{
+        display: none;
+    }
+    .body {
+        margin: 0px 100px;
+    }
+   
 }
