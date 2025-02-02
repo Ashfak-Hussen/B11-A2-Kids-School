@@ -3,7 +3,6 @@
 
 /* css for body*/
 .body {
-    margin: 0px 160px;
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
 }
@@ -13,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0px 160px;
 }
 
 .navTitleParent {
