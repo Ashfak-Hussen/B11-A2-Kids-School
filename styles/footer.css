@@ -1,0 +1,127 @@
+/* parent section */
+.footer {
+    background-color: rgb(1, 172, 253);
+    padding: 100px 0px;
+}
+
+.footerParent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 160px;
+}
+
+/* ad section */
+.advertisementSection {
+    width: 33%;
+}
+
+.adUpperSection {
+    display: flex;
+    align-items: center;
+}
+
+.adPSection {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    padding-right: 40px;
+}
+
+/* footerAbout section */
+.footerAbout {
+    width: 33%;
+    text-align: left;
+}
+
+.aboutSectionTitle {
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin: 0px 0px;
+}
+
+.aboutSectionPara {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    ;
+}
+
+/* social sites */
+.socialSitesTitle {
+    color: white;
+}
+
+.socialLogo img {
+    max-height: 40px;
+    max-width: 40px;
+}
+
+/* Responsive for small device like phone */
+@media screen and (max-width:576px) {
+    .footerParent {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 60px;
+    }
+    .footer {
+        padding: 0px 0px;
+    }
+    .advertisementSection {
+        width: 100%;
+        margin: 0px 0px;
+    }
+
+    .adPSection {
+        font-size: 9px;
+        font-weight: 300;
+        color: rgb(255, 255, 255);
+    }
+
+    /* about */
+    .footerAbout {
+        width: 100%;
+        text-align: left;
+        margin: 0px 0px;
+    }
+
+    /* social */
+    .socialLogo {
+        display: flex;
+        gap: 10px;
+        padding: 0px 0px 100px 0px;
+    }
+    .socialSites{
+        text-align: left;
+        width: 100%;
+    }
+}
+
+/* responsive for medium device */
+@media screen and (min-width:577px) and (max-width:1176px) {
+    .footerParent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px;
+        
+    }
+    .advertisementSection{
+        width: 100%;
+        padding:0px 10px 0px 60px;
+    }
+    .footerAbout{
+        width: 100%;
+        padding-left: 60px;
+        margin-left: 20px;
+    }
+    .adPSection{
+        padding-right: 0px;
+        padding-left: 6px;
+    }
+    .socialSites{
+      
+        max-width: 100%;
+        padding-left: 60px;;
+    }
+}

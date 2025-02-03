@@ -150,8 +150,8 @@
 .storySection {
     background-image: url(/assets/bg.png),
         linear-gradient(0.00deg,
-        rgba(254, 163, 1, 0.3),
-        rgba(255, 255, 255, 0.3) 100%);
+            rgba(254, 163, 1, 0.3),
+            rgba(255, 255, 255, 0.3) 100%);
     padding: 50px 160px;
     background-repeat: no-repeat;
     text-align: center;
@@ -179,13 +179,14 @@
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
-    margin:0 auto;
 }
-.firstStoySec img{
+
+.firstStoySec img {
     max-width: 100%;
 }
+
 .firstStoyTitle,
-.firstStoyPara{
+.firstStoyPara {
     padding: 10px 30px;
 }
 
@@ -198,30 +199,33 @@
 }
 
 .squareBox {
-    width: 290px;
+    max-width: 290px;
     height: 301px;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
     border-radius: 10px;
     position: relative;
 }
-.sqaurePara{
+
+.sqaurePara {
     background-color: rgb(149, 178, 38);
     border-radius: 15px;
     padding: 5px 10px;
     position: absolute;
     left: 25%;
-   bottom: 32%;
+    bottom: 32%;
 }
-#sqaurePara2{
+
+#sqaurePara2 {
     background-color: rgb(93, 88, 240);
 }
 
 .squareBox img {
-    max-height: 100%;
+    /* max-height: 100%; */
     max-width: 100%;
 }
-.sqaureHeader{
+
+.sqaureHeader {
     padding: 10px 30px;
 }
 
@@ -244,11 +248,22 @@
         flex-direction: column-reverse;
         margin: 20px 50px -60px 50px;
     }
-    .bannerPhotoHolder img{
+
+    .bannerPhotoHolder img {
         max-width: 100%;
     }
-    .bannerTitle{
+
+    .bannerTitle {
         font-size: 30px;
+    }
+
+    /* curriculam section */
+    .curriculamSection {
+        padding: 0px;
+    }
+
+    .curriculamTitleParent {
+        text-align: center;
     }
 
     .curriculamTitle {
@@ -256,28 +271,49 @@
         font-weight: 500;
     }
 
+    /* components */
     .componentsParent {
         display: flex;
         flex-direction: column;
     }
+
+    /* story section */
+    .storySection {
+        padding: 0px;
+        padding-top: 60px;
+    }
+
     .storyBoxContainer {
         display: flex;
         flex-direction: column;
     }
+
     .firstStoySec {
-       width: 290px;
-       height: auto;
+        width: 290px;
+        height: auto;
         border-radius: 10px;
         background-color: rgb(255, 255, 255);
         overflow: hidden;
     }
-    .firstStoySec img{
+
+    .firstStoySec img {
         max-width: 100%;
         max-height: 100%;
     }
+
+    /* square box */
+    /* .squareBox{
+        width: 100%;
+    } */
     .storySquare {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        margin: 10px;
+    }
+
+    /* view all btn */
+    .viewAll {
+        margin-bottom: 40px;
     }
 }
 
@@ -290,6 +326,10 @@
         margin-top: 25px;
     }
 
+    .curriculamSection {
+        padding: 0px;
+    }
+
     .componentsParent {
         display: flex;
         flex-direction: row;
@@ -297,9 +337,23 @@
         align-items: center;
         flex-wrap: wrap;
     }
+
     /* story */
     .storyBoxContainer {
         display: flex;
         flex-direction: column;
+    }
+
+    .storySection {
+        padding: 0px 30px 0px 30px;
+    }
+
+    /* .squareBox */
+    .squareBox img {
+        max-width: 100%;
+    }
+
+    .viewAll {
+        margin-bottom: 40px;
     }
 }
